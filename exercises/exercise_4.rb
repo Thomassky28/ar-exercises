@@ -13,8 +13,19 @@ puts "----------"
 
 
 
-pp Store.all
+# pp Store.all
 
-where
+@mens_stores = Store.where( 'mens_apparel = true AND womens_apparel = false ' )
 
-@mens_stores =
+@mens_stores.each {|store| puts "#{store.name}, #{store.annual_revenue}"}
+
+# pp @mens_stores
+
+# @women_stores = Store.where( 'womens_apparel = ? AND annual_revenue < ?', true, 1000000)
+
+@women_stores2 = Store.where( 'womens_apparel = true AND annual_revenue < 1000000')
+
+# pp @women_stores2
+
+
+# pp @mens_stores
