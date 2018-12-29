@@ -11,5 +11,5 @@ puts "----------"
 
 @store1.update(name: 'North Vancouver')
 
-
+pp @store1
 pp Store.all

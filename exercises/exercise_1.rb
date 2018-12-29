@@ -28,14 +28,15 @@ store3 = Store.new do |u|
 end
 store3.save!
 
+
+
 pp Store.count
 
 
 # pp Store.all
 # stores =
 
-@store1 = Store.find_by(id: 1);
-puts @store1.name
+
 # @store1 -> an instance of Store
 # nil
 
